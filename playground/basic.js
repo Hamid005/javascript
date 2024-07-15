@@ -9,10 +9,23 @@ if(marks < 30 ) {
 else{
     console.log('you are pass.');
 }
-const marks1 = 45;
-if(marks <33 && marks >= 0 ){
-    console.log("you have failed")
+const marks1 = 25;
+if(marks1 <33 && marks1 >= 0 ){
+    console.log("you have failed");
 }
-if(marks >=33  && marks <= 50 ){
-    console.log("you have grade B")
+ else if(marks1 <=33  && marks1 <= 50 ){
+    console.log("you have grade B");
 }
+
+const temp = 46;
+if (temp > 45 ){
+    console.log("too hot");
+}
+ else if (temp > 35){
+    console.log("prety nice ");
+}
+
+
+
+
+
