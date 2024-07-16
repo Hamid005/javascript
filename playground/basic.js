@@ -28,30 +28,37 @@
 // ( marks >= 33 ? console.log( " pass ")  : console.log( " fail " ) )
 //switch
 
-const number = 10 ;
-switch( number){
-    case 10:
-        console.log("yes it is 10");
-        case 20 :
-            console.log ('no its not 10');
-            break ;
-            default :
-            console.log ('this is default')
-// exampl # 2
-            const number1 = 10;
-            switch (number1 < 0){
-                case true :
-                    console.log("negative")
-                    case break :
-default :
-console.log ("positive") ;          
-}
-// exampl 2
-const name = "hamid"
-switch(name){
-    case abduallah:
-    console.log ("hello hamid")
-}
+// const number = 10 ;
+// switch( number){
+//     case 10:
+//         console.log("yes it is 10");
+//         case 20 :
+//             console.log ('no its not 10');
+//             break ;
+//             default :
+//             console.log ('this is default')
+// // exampl # 2
+//             const number1 = 10;
+//             switch (number1 < 0){
+//                 case true :
+//                     console.log("negative")
+//                     case break :
+// default :
+// console.log ("positive") ;          
+// }
+// // exampl 2
+// const name = "hamid"
+// switch(name){
+//     case abduallah:
+//     console.log ("hello hamid")
+// }
+
+
+//  template literals
+const firstName = "hamid";
+const lastName = "khan";
+console.log("hello" + firstName+ " " + lastName);
+console.log( ` hello ${firstName} ${lastName}` );
 
 
 
