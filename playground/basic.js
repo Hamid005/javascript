@@ -64,13 +64,25 @@
 
 // loops
 // For,While,Do While
-for(let i=0; i< 10;i++){
-    console.log(i);
-}
+// for(let i=0; i< 10;i++){
+//     console.log(i);
+// }
 const list =[ 23,45,1,4,6,7,90]
-for(let i=0;  i < list.length; i++){
-    console.log(list[i]);
+// for(let i=0;  i < list.length; i++){
+//     console.log(list[i]);
+// }
+let j = 0;
+while (j < list.length){
+    console.log (list[ j ] );
+    j++;
 }
+
+
+
+
+
+
+
 
 
 
