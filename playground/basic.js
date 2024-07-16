@@ -81,11 +81,66 @@
 // }
 
 // DOWHILE LOOP
-let i = 0;
-do{
-    console.log(i);
-    i++;
-}while (i > 10);
+// let i = 0;
+// do{
+//     console.log(i);
+//     i++;
+// }while (i > 10);
+
+// object (variable)save one or more type of data save.
+// const data =  {
+//     marks : 45,
+//     name : "Asad shah",
+//     gpa : 3.5 ,
+//     isPass : true,
+//     friends : [" ahad" , "samad" , "qadeer" ],
+//     address : {          
+//     city : " Mardan ",
+//     country : " pakistan ",
+//     tehsil : " katlang "
+// }
+// }
+const student = [ 
+    {
+            marks : 55,
+            name : "Asad shah",
+            gpa : 3.2 ,
+            isPass : true,
+            friends : [" shahyan " , " m.samad" , "john" ],
+            address : {          
+            city : " khyber  ",
+            country : " pakistan ",
+            tehsil : " warsak Road "
+        }
+        },
+    {
+                marks : 30,
+                name : "inshaullah",
+                gpa : 2.0 ,
+                isPass : false,
+                friends : [" sohail" , "sohaib" , "mahmmad" ],
+                address : {          
+                city : " topi ",
+                country : " pakistan ",
+                tehsil : " swabi"
+            }
+            },
+
+    {
+                marks : 45,
+                name : "Asad shah",
+                gpa : 3.5 ,
+                isPass : true,
+                friends : [" ahad" , "samad" , "qadeer" ],
+                address : {          
+                city : " Mardan ",
+                country : " pakistan ",
+                tehsil : " katlang "
+            }
+            }
+]
+console.log(student[2]. friends[2]);
+
 
 
 
