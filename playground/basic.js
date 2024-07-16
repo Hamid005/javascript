@@ -55,10 +55,35 @@
 
 
 //  template literals
-const firstName = "hamid";
-const lastName = "khan";
-console.log("hello" + firstName+ " " + lastName);
-console.log( ` hello ${firstName} ${lastName}` );
+
+
+// const firstName = "hamid";
+// const lastName = "khan";
+// console.log("hello" + firstName+ " " + lastName);
+// console.log( ` hello ${firstName} ${lastName}` );
+
+// loops
+// For,While,Do While
+for(let i=0; i< 10;i++){
+    console.log(i);
+}
+const list =[ 23,45,1,4,6,7,90]
+for(let i=0;  i < list.length; i++){
+    console.log(list[i]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
