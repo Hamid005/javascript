@@ -100,49 +100,76 @@
 //     tehsil : " katlang "
 // }
 // }
-const student = [ 
-    {
-            marks : 55,
-            name : "Asad shah",
-            gpa : 3.2 ,
-            isPass : true,
-            friends : [" shahyan " , " m.samad" , "john" ],
-            address : {          
-            city : " khyber  ",
-            country : " pakistan ",
-            tehsil : " warsak Road "
-        }
+// object #2
+// const student = [ 
+//     {
+//             marks : 55,
+//             name : "Asad shah",
+//             gpa : 3.2 ,
+//             isPass : true,
+//             friends : [" shahyan " , " m.samad" , "john" ],
+//             address : {          
+//             city : " khyber  ",
+//             country : " pakistan ",
+//             tehsil : " warsak Road "
+//         }
+//         },
+//     {
+//                 marks : 30,
+//                 name : "inshaullah",
+//                 gpa : 2.0 ,
+//                 isPass : false,
+//                 friends : [" sohail" , "sohaib" , "mahmmad" ],
+//                 address : {          
+//                 city : " topi ",
+//                 country : " pakistan ",
+//                 tehsil : " swabi"
+//             }
+//             },
+
+//     {
+//                 marks : 45,
+//                 name : "Asad shah",
+//                 gpa : 3.5 ,
+//                 isPass : true,
+//                 friends : [" ahad" , "samad" , "qadeer" ],
+//                 address : {          
+//                 city : " Mardan ",
+//                 country : " pakistan ",
+//                 tehsil : " katlang "
+//             }
+//             }
+// ]
+// console.log(student[2]. friends[2]);
+
+
+// object # 2
+const data  = {
+    products :[
+        {
+            name : " laptop",
+            price : 50000,
+            isAvailable : true
         },
-    {
-                marks : 30,
-                name : "inshaullah",
-                gpa : 2.0 ,
-                isPass : false,
-                friends : [" sohail" , "sohaib" , "mahmmad" ],
-                address : {          
-                city : " topi ",
-                country : " pakistan ",
-                tehsil : " swabi"
-            }
-            },
+        {
+            name : " mobile",
+            price : 25000,
+            isAvailable : false
+        },
+        {
+            name : " tv",
+            price : 20000,
+            isAvailable : false
+        },
+        {
+            name : "  fridge",
+            price : 55000,
+            isAvailable : true
+        },
 
-    {
-                marks : 45,
-                name : "Asad shah",
-                gpa : 3.5 ,
-                isPass : true,
-                friends : [" ahad" , "samad" , "qadeer" ],
-                address : {          
-                city : " Mardan ",
-                country : " pakistan ",
-                tehsil : " katlang "
-            }
-            }
-]
-console.log(student[2]. friends[2]);
-
-
-
+    ]
+}
+ 
 
 
 
