@@ -234,12 +234,61 @@ document.write(ages + " <br> <br>");
  console.log(sort) */
 
 const marks = [45,33,20,77,80,95,40,55,30,22]
+const remain = [22,33,4]
+/*
   const sum = marks
-  .sort ((a, b) =>a -b)
-  .filter ((n )=> n > 50)
-  .map( (n) => n + 10  )
-  .reduce( (a,b) => a +b, 0);
+  .sort (( a, b) =>a - b)
+  .filter (( n )=> n > 50)
+  .map( ( n) => n + 10  )
+  .reduce( (a,b) => a + b, 0);
   console.log(sum)
+//push
+//pop
+ const l = marks.indexOf(22)
+ console.log(l)
+
+*/
+//every all value are same
+//some some are same
+//concat 
+/*const full = marks .concat(remain); // add value to last
+
+console.log (full)
+
+
+list = [ ]
+list.fill (10,0,10)
+list.some(10)*/
+// destructuring
+
+//const names =[ "huzaifa","hmmad","afzal","hamid" ];//
+/*const name1 = names[0];
+const name2 = names[1];
+const name3 = names[2];
+const name4 = names[3];*/
+
+//const [name1,,,name2 ] = names;//
+//console.log(name2)//
+ 
+
+//destructuring object important topic
+
+const student_list = {
+    name : "abdus samad",
+    age : 23,
+    ispass : true,
+    friends :["abdus samad", "qadir","samad"],
+address : {
+    city : "mardan",
+    village : "katlang"
+}
+}
+const {name ,address} = student_list;
+console.log(address.city)
+
+
+
+
 
 
 
