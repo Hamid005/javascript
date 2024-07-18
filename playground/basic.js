@@ -143,33 +143,49 @@
 // console.log(student[2]. friends[2]);
 
 
-// object # 2
-const data  = {
-    products :[
-        {
-            name : " laptop",
-            price : 50000,
-            isAvailable : true
-        },
-        {
-            name : " mobile",
-            price : 25000,
-            isAvailable : false
-        },
-        {
-            name : " tv",
-            price : 20000,
-            isAvailable : false
-        },
-        {
-            name : "  fridge",
-            price : 55000,
-            isAvailable : true
-        },
+//  object # 2
+// const data  = {
+//     products :[
+//         {
+//             name : " laptop",
+//             price : 50000,
+//             isAvailable : true
+//         },
+//         {
+//             name : " mobile",
+//             price : 25000,
+//             isAvailable : false
+//         },
+//         {
+//             name : " tv",
+//             price : 20000,
+//             isAvailable : false
+//         },
+//         {
+//             name : "fridge",
+//             price : 55000,
+//             isAvailable : true
+//         },
 
-    ]
+//     ]
+// }
+// const products = data.products;
+// for( let i= 0; i<products.length; i++){
+//     console.log(products[i].name);
+// }
+//  Map
+var ary =[3,4,5,10];
+
+var b = ary.map(test);
+document.write(b);
+
+function test(x){
+    return x * 10;
 }
- 
+
+
+
+
 
 
 
