@@ -113,12 +113,17 @@ console.log(num3)*/
 
 //const fs = require("fs"); // use for new file in node
 // fs.writeFileSync("text.txt","hello world")
-for(let i= 0; i<10; i++){  
+/*for(let i= 0; i<10; i++){  
  const r = Math.random( ); //generate random num in browser
  console.log( Math.ceil(r*1000))
-}
-
-
+}*/
+// random between numbers
+function randomIntFromInterval(min, max) { // min and max included 
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+  for (let i=0; i< 10;i++){
+    console.log(randomIntFromInterval(1,6))
+  }
  
 
 
