@@ -6,9 +6,13 @@
     <title>Dom</title>
 </head>
 <body>
+    <button onclick="changeDom()">Click</button>
     <h1 id="head1"> This is a heading</h1>
-    
+
     <script>
+        const changeDom = ( )=>{
+            document.getElementById("head1").innerHTML= "pakistan";
+        }
       //   const h1= document.getElementById("head1"); // same
 //const p =document.getElementsByClassName("para1");
 //const h3 = document.getElementsByTagName("p");
