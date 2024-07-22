@@ -8,11 +8,17 @@
 <body>
     <button onclick="changeDom()">Click</button>
     <h1 id="head1"> This is a heading</h1>
+    <img src="./hamid.jpeg" alt="avatar " id="img1" width="100" height="100">
 
     <script>
         const changeDom = ( )=>{
-            document.getElementById("head1").innerText=
+            // changing inner text of tags
+            document.getElementById("head1").innerHTML=
             "<u> pakistan </u>";
+// changing attributes of tags
+document.getElementById("img1").width="200"
+document.getElementById("img1").height="200"
+
         }
     </script>
 </body>
