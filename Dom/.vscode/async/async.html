@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const one = (callback )=>{
+    setTimeout( ()=>{
+        console.log("one")
+        callback( );
+    },5000)
+}
+const two = ( callback)=>{
+    setTimeout(  ( )=>{    
+    console.log("two")
+    callback( );
+},3000)
+}
+const three = (callback )=>{
+    console.log("three")
+    callback( );
+}
+//CALL BACK HELL
+one( 
+    ( )=>{
+        two (( )=>{
+            three (( ) =>{
+                console.log("done")
+            })
+             })
+
+         }
+
+);
+
+
+
+    </script>
+</body>
+</html>

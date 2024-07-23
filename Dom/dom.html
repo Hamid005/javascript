@@ -7,32 +7,63 @@
 </head>
 <body>
     <button onclick="changeDom()">Click</button>
+    <ul id = "items">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
     <h1 id="head1"> This is a heading</h1>
     <img src="./hamid.jpeg" alt="avatar " id="img1" width="100" height="100">
 <form id="f1">
     <label>Username</label><input type="text" id="username"
     name="username">
-    <label>Password</label><input type="password" id="password"
-    name="password">document.forms[ "f1"]["username"].
-</form>
-    <script>
+    <label>Password</label><input type="password" id="password" name="password">
+<p style="color: red "; id = "para1" onclick="paraFun( this)">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, velit, recusandae veritatis illum dolore pariatur numquam eveniet beatae odit fuga harum. Reprehenderit ab aspernatur illum vitae. Placeat natus maxime nesciunt.</p>
+<p style="color: rgb(25, 0, 255) "; id = "para2" onclick="paraFun(this)">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, velit, recusandae veritatis illum dolore pariatur numquam eveniet beatae odit fuga harum. Reprehenderit ab aspernatur illum vitae. Placeat natus maxime nesciunt.</p>
+<div id="news"></div>   
+<h2 id="head4">HEADING 1</h2>
+<script>
         const changeDom = ( )=>{
 
+const h2= document.getElementById("head2");
+h2.setAttribute("class","heading");
 
             // changing inner text of tags
             document.getElementById("head1").innerHTML=
             "<u> pakistan </u>";
             
 // changing attributes of tags
-document.getElementById("img1").width="200";
-document.getElementById("img1").height="200";
+document.getElementById("img1").width="100";
+document.getElementById("img1").height="100";
 
- const username = document.forms[ "f1"]["username"].
-value;
- const password = document.forms[ "f1"]["password"].
-value;
+ const username = document.forms[ "f1"]["username"].value
+ const password = document.forms[ "f1"]["password"].value;
 console.log(username,password)
-        }
-    </script>
+
+document.querySelector("#para1" ) .style.
+backgroundColor = "blue";
+
+const p = document.createElement("p")
+p.id = "abc";
+p.innerHTML= "This is a new paragraph";
+ const div = document.getElementById("news")
+ div.appendChild(p);
+
+
+ const li = document.createElement("li");
+ li.textContent= "New Item";
+ document.getElementById("items").appendChild(li);
+}
+
+const paraFun = (para)=>{
+    if(para.id === "para1" ){
+        console.log("para1")
+    }
+    else{
+        console.log("para2")
+    }
+
+}
+    </script> 
 </body>
 </html>
