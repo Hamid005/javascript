@@ -40,7 +40,7 @@ const one = ( )=>{
   return new Promise(( resolve,reject) =>{
     setTimeout(() =>{
         console.log("one")
-        resolve;
+        resolve();
     },3000)
   })
 
@@ -49,7 +49,7 @@ const two= ( )=>{
     return new Promise(( resolve,reject) =>{
         setTimeout(() =>{
             console.log("two")
-            resolve;
+            resolve ();
         },1000)
       })
 
@@ -59,16 +59,23 @@ const three = ( )=>{
     return new Promise(( resolve,reject) =>{
         setTimeout(() =>{
             console.log("three")
-            resolve;
+            resolve();
         },4000)
       })
       // this is a smaller hell
-one().then (()=>{
+/*one().then (()=>{
     two().then(() =>{
     three().then(() =>{
     })
     })
-})
+})*/
+//Async Await
+async function  run (){ 
+await one();
+await two();
+await three();
+}
+run();
 
 
 
