@@ -1,5 +1,6 @@
 <<!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +8,43 @@
         <meta name="Description" content="Enter your description here" />
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <title>Title</title>
     </head>
+
     <body>
         <button onclick="LoadData( )"> LoadData </button>
-        <div id="data"></div>
+        <ul id="titles"></ul>
         <script>
-         const LoadData = ( ) => {
-            console.log('load data')
-       const xhr =  new XMLHttpRequest ( ) ;
-       xhr.open(  "GET" , "https://jsonplaceholder.typicode.com/todos" ,true)    //requset initiatae
-       xhr.onreadystatechange =  function ( ){
-        if(xhr.readyState == 4  &&  xhr.status ==200 )
-{ 
-            const data = xhr.responseText
-document.getElementById("data").innerHTML = data;
-  }
-     }
-           xhr.send( );           
-         }
-    </script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            const LoadData = () => {
+                const xhr = new XMLHttpRequest();
+                xhr.open("GET", "https://jsonplaceholder.typicode.com/todos", true)    //requset initiatae
+                xhr.onreadystatechange = function ( ) {
+
+                    if (this.readyState == 4 && this.status == 200) {
+
+                        const todos = JSON.parse(this.responseText)
+                        console.log(todos)
+
+                        const titles = todos.map(todo => {
+
+                            const li = document.createElement("li")
+                            li.textContent = todo.title
+
+                            document.getElementById("titles").
+                                appendChild(li)
+                        })
+                    }
+
+                    }
+                xhr.send();
+            }
+                console.log(titles)
+
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </body>
-</html>
+
+    </html>
