@@ -1,6 +1,16 @@
  // "This" refer to the object of the class  
 class Bank {
+    // private:
     balance = 0;
+
+    getBalance( ){
+        return this.balance;
+    }
+    setBalance(balance){
+        this.balance = balance;
+    }
+
+
     constructor(balance){
         this.balance = this.balance + balance;
     }
@@ -10,7 +20,7 @@ class Bank {
     // getRef( ){
     //     return this;
     // }
-
+ // setter
     credit(balance) {     //  +
          // Guard clause
          if(balance <= 0)return;
@@ -19,7 +29,7 @@ class Bank {
     }
     debit(balance) {    //  -
         if(balance<= 0 && balance>this.balance)return;
-        
+
         this.balance = this.balance - balance
     }
     getBalance( ){
