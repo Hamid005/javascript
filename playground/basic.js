@@ -204,7 +204,10 @@
 // for( let i= 0; i<products.length; i++){
 //     console.log(products[i].name);
 // }
+
 //  Map
+
+ // const square = marks.map((n) ==> n > 30 ? n* n : n );
 var ary = [3, 4, 5, 10];
 
 var b = ary.map(test);
@@ -213,6 +216,14 @@ document.write(b);
 function test(x) {
     return x * 10;
 }
+//map
+//filter
+//reduce
+//sort
+const list2 = [ 2,3,4,5,10,9]
+const sort = list2.sort (( x,y ) => x - y);
+console.log(sort)
+
 
 
 
