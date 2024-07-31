@@ -1,4 +1,4 @@
-class Mobile{
+class Mobile {
     name;
     model;
     battery;
@@ -6,18 +6,18 @@ class Mobile{
     storage;
     mic;
 
-call ( ){
+    call() {
+        this();
+    }
+    sms() {
 
-}
-sms(){
+    }
+    recording() {
+        // recording up to 1 hour
+    }
+    charging() {
 
-}
-recording( ){
- // recording up to 1 hour
-}
-charging(){
-
-}
+    }
 
 
 }

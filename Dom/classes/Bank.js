@@ -43,7 +43,7 @@ user1.credit(100);
 user1.debit(500);
 user1.debit(500);
 
-console.log( ` Your balance is :  `+ user1.getBalance ())
+console.log( ` Your balance is :  `+ user1.getBalance () )
 
 // const obj1= new Bank (500);
 // const obj2 = obj1.getRef( );

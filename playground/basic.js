@@ -10,7 +10,7 @@
 //     console.log('you are pass.');
 // }
 // const marks1 = 25;
-// if(marks1 <33 && marks1 >= 0 ){
+// if(marks1 <33 && marks1 >= 0 ){     // &=range
 //     console.log("you have failed");
 // }
 //  else if(marks1 <=33  && marks1 <= 50 ){
@@ -25,8 +25,12 @@
 //     console.log("prety nice ");
 //   }
 
-// ( marks >= 33 ? console.log( " pass ")  : console.log( " fail " ) )
-//switch
+// conditional
+// is use for only two condition 
+
+// ( marks >= 33 ? console.log( " pass ")  : console.log( " fail " ) );
+
+//switch:
 
 // const number = 10 ;
 // switch( number){
@@ -41,16 +45,18 @@
 //             const number1 = 10;
 //             switch (number1 < 0){
 //                 case true :
-//                     console.log("negative")
+//                     console.log("negative");
 //                     case break :
 // default :
 // console.log ("positive") ;          
 // }
+
 // // exampl 2
+
 // const name = "hamid"
 // switch(name){
-//     case abduallah:
-//     console.log ("hello hamid")
+//     case "abduallah":
+//     console.log ("hello hamid");
 // }
 
 
@@ -63,44 +69,65 @@
 // console.log( ` hello ${firstName} ${lastName}` );
 
 // loops
-// For,While,Do While
+
+// for loop   { start/end define}
 // for(let i=0; i< 10;i++){
 //     console.log(i);
 // }
+
+// array iliterate for loop
+
 // const list =[ 23,45,1,4,6,7,90]
 // for(let i=0;  i < list.length; i++){
 //     console.log(list[i]);
 // }
 
-// WHILE LOOP
+// WHILE LOOP   { end not define like countdown timer etc}
+
 // const list =[ 23,45,1,4,6,7,90]
 // let j = 0;
 // while (j < list.length){
-    // console.log (list[ j ] );
-    // j++;
+// console.log (list[ j ] );
+// j++;
 // }
 
-// DOWHILE LOOP
+// DOWHILE LOOP  { must one time run ( true or false)  }
+
 // let i = 0;
 // do{
 //     console.log(i);
 //     i++;
 // }while (i > 10);
 
-// object (variable)save one or more type of data save.
+// object 
+// object is variable that save one or more type of data save.
+
+// javascript start
+
 // const data =  {
 //     marks : 45,
 //     name : "Asad shah",
 //     gpa : 3.5 ,
 //     isPass : true,
-//     friends : [" ahad" , "samad" , "qadeer" ],
+//     friends : [" ahad " , " samad " , " qadeer " ],
 //     address : {          
-//     city : " Mardan ",
-//     country : " pakistan ",
-//     tehsil : " katlang "
+//                    city : " Mardan ",
+//                     country : " pakistan ",
+//                      tehsil : " katlang "
 // }
-// }
-// object #2
+// };
+// console.log(data.name); // Output: "Asad shah"
+// console.log(data.friends[0]); // Output: " ahad "
+// console.log(data.address.city); // Output: " Mardan "
+
+//              if (data.isPass) {
+    //     console.log("Friends:");
+    //     data.friends.forEach(friend => {
+    //       console.log(friend.trim()); // trim() to remove extra spaces
+    //     });
+  
+// object of object
+
 // const student = [ 
 //     {
 //             marks : 55,
@@ -109,11 +136,13 @@
 //             isPass : true,
 //             friends : [" shahyan " , " m.samad" , "john" ],
 //             address : {          
-//             city : " khyber  ",
-//             country : " pakistan ",
-//             tehsil : " warsak Road "
+//                           city : " khyber  ",
+//                            country : " pakistan ",
+//                             tehsil : " warsak Road "
 //         }
-//         },
+//         }
+
+//   }
 //     {
 //                 marks : 30,
 //                 name : "inshaullah",
@@ -121,9 +150,9 @@
 //                 isPass : false,
 //                 friends : [" sohail" , "sohaib" , "mahmmad" ],
 //                 address : {          
-//                 city : " topi ",
-//                 country : " pakistan ",
-//                 tehsil : " swabi"
+//                              city : " topi ",
+//                               country : " pakistan ",
+//                               tehsil : " swabi"
 //             }
 //             },
 
@@ -134,16 +163,18 @@
 //                 isPass : true,
 //                 friends : [" ahad" , "samad" , "qadeer" ],
 //                 address : {          
-//                 city : " Mardan ",
-//                 country : " pakistan ",
-//                 tehsil : " katlang "
+//                             city : " Mardan ",
+//                              country : " pakistan ",
+//                              tehsil : " katlang "
 //             }
 //             }
-// ]
 // console.log(student[2]. friends[2]);
 
+// console.log("Cities:");
+// student.forEach(student => {
+//   console.log(student.address.city);
+// });
 
-//  object # 2
 // const data  = {
 //     products :[
 //         {
@@ -174,12 +205,12 @@
 //     console.log(products[i].name);
 // }
 //  Map
-var ary =[3,4,5,10];
+var ary = [3, 4, 5, 10];
 
 var b = ary.map(test);
 document.write(b);
 
-function test(x){
+function test(x) {
     return x * 10;
 }
 
