@@ -208,37 +208,91 @@
 //  Map
 
  // const square = marks.map((n) ==> n > 30 ? n* n : n );
-var ary = [3, 4, 5, 10];
+// var ary = [3, 4, 5, 10];
 
-var b = ary.map(test);
-document.write(b);
+// var b = ary.map(test);
+// document.write(b);
 
-function test(x) {
-    return x * 10;
-}
+// function test(x) {
+//     return x * 10;
+// }
 //map
 //filter
 //reduce
 //sort
-const list2 = [ 2,3,4,5,10,9]
-const sort = list2.sort (( x,y ) => x - y);
-console.log(sort)
+// const list2 = [ 2,3,4,5,10,9]
+// const sort = list2.sort (( x,y ) => x - y);
+// console.log(sort)
+
+// Arary desructuring
+
+//  const names = [ "hamid", "sajjad", "sohail", "sahil","shah"];
+// const [ stu1,name2] = names;
+
+// console.log(name2)
+
+// Object desructuring // iMPORTANT 
+// const student = [ 
+//         {
+//                 marks : 55,
+//                 name : "Asad shah",
+//                 gpa : 3.2 ,
+//                 isPass : true,
+//                 friends : [" shahyan " , " m.samad" , "john" ],
+//                 address : {          
+//                               city : " khyber  ",
+//                                country : " pakistan ",
+//                                 tehsil : " warsak Road "
+//             }
+//             }
+//             const { name ,address } = student_list;
+//             console.log(address)
+    
+//   STRING
+
+const str1 = "hello";
+const str2 = "ello";
+ const str ="My country name is pakistan"
+//const str3 = str1.concat(str2)
+// const str3 = str1 + str2;
+// const str4 =`${ str1}   ${str2}`;
+
+//const l = str.indexOf("new")
+//console.log(l)
+
+//const l2 = str.replace("new","old"); // replace
+//const.log(l2)
+
+// slice
+// const key = "pakistan"
+// const  country = str.slice(str.indexOf("key"),key.length + str.indexOf(key));
+// console.log(country)
+
+//split
+// most.impotant in string
+//php  split=explode
+
+// const string="1,hamid,swabi.3.25 |  6th | ICP"
+// const   [ id , name  , address ,  gpa , semester,institue] =
+
+// string.split ( ",");
+
+// trim
+const name ="hamid"
+const trim =  name.trim( );
 
 
+// Array
 
+//forEach 
+//Map,filter,reduce,indexOf,sort,slice
+//push/PopStateEvent,concat,fill,some,every,replace
 
+//String
+//trim,slice,concat,substring,split,indexOf
+//length,replace,upper,lower 
 
-
-
-
-
-
-
-
-
-
-
-
+//Array,object destructuring
 
 
 
