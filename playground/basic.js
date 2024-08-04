@@ -250,9 +250,9 @@
     
 //   STRING
 
-const str1 = "hello";
-const str2 = "ello";
- const str ="My country name is pakistan"
+// const str1 = "hello";
+// const str2 = "ello";
+//  const str ="My country name is pakistan"
 //const str3 = str1.concat(str2)
 // const str3 = str1 + str2;
 // const str4 =`${ str1}   ${str2}`;
@@ -293,6 +293,13 @@ const trim =  name.trim( );
 //length,replace,upper,lower 
 
 //Array,object destructuring
+
+// deafault parameter
+// const fun =( name)=>{
+//     console.log(`Hello ${name}` )
+// }
+// fun( );
+
 
 
 
