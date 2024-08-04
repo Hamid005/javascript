@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./playground/basic.js">
 </head>
 <body>
     <script>
@@ -62,7 +61,8 @@ const obj2 ={
     gpa : 3.2,
     semester : 6,
 }*/
-/*const count = (a,b,...c)=>{
+/* pori array ko 1 arugment ko pass kraskta ha kisi function ko using .....spread opertors
+const count = (a,b,...c)=>{
     console.log(a+b)
     const s =c.reduce((a,b)  => a +b, 0)
     console.log(s)
@@ -74,8 +74,9 @@ count(60,33,4,3,4,55,66)*/
 let t = [  myName]
 console.log(t)*/
 
-/*
-const fName = "hamid";
+// es6 features
+
+/*const fName = "hamid";
 const lName = "khan";
 const age = "22";
 const gender = "male";
@@ -98,13 +99,15 @@ const data = {
 console.log(data)*/
 
 
-//Number
-/*const test1 = 12.4;
+//Number methods
+/*
+const test1= 12.4;
 const test2 = 23
-const num= test1.toFixed(2);
-const num2= Math.ceil(test1);
-const num3= Math.floor(test1);
+const num= test1.toFixed(2);       
+const num2= Math.ceil(test1);   //number ko upper lijana
+const num3= Math.floor(test1); // number ko nicha lana
 
+console.log(num)
 console.log(num2)
 console.log(num3)*/
 
@@ -113,19 +116,29 @@ console.log(num3)*/
 
 //const fs = require("fs"); // use for new file in node
 // fs.writeFileSync("text.txt","hello world")
+
 /*for(let i= 0; i<10; i++){  
  const r = Math.random( ); //generate random num in browser
- console.log( Math.ceil(r*1000))
+ console.log( Math.ceil(r*100))
 }*/
-// * random between numbers*
-/*function randomIntFromInterval(min, max) { // min and max included 
+
+ //random between numbers
+/*
+function randomIntFromInterval(min, max) {       // min and max included 
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
   for (let i=0; i< 10;i++){
     console.log(randomIntFromInterval(1,6))
-  }*/
+  }
+*/
+
+ // Vanilla javascript= no uses libraries
+// momentJS = uses libraries
+
+// heaf = boht zyda
+
   // date
-   /*const d= new Date();
+   /*const d= new Date();  
  console.log(d.getDate())
  console.log(d.getFullYear())   
  console.log(d.getYear())
@@ -133,6 +146,7 @@ console.log(num3)*/
  console.log(d.getDay())
  console.log(d.getMinutes())
  console.log(d.getSeconds())
+ console.log(d.toDateString("dd/mm/yyyy") )
  console.log(d.getMilliseconds())
  console.log(d.getTime())
  console.log(d.getTimezoneOffset())
@@ -145,12 +159,12 @@ const max = Math.max(...list)
 console.log(max)*/
 
 
-//sets[array allow unique value only ]
+//sets[ A js set is a collection of unique values ]
  /*const s = new Set ([1,2,3,4,5,6,7,8,9])
  s.add(11)
  console.log(s)*/
 
-
+// object.keys (return all keys in outpot)
  /*const obj ={
     sno: 1,
     name : "hamid khan",
@@ -160,30 +174,26 @@ console.log(max)*/
     // const   keys = Object.keys (obj)
   //  console.log(keys)
 
-
-  // for in loop
+//loops
+  // for in loop (iterate  over an object with keys)
 /*for (let i=0;i<obj.length;i++){
-    console.log(obj[0] .name)
+    console.log(obj[i] .name)
 }
 for (o in obj){
     console.log(obj[0].name)
 }*/
-   //for of loop
+   //for of loop( iterate over Arrays,Strings,object ,anywhere)
    /*const str = "pakistan"
    for (let j of str){
     console.log(j)
    }*/
-    for(let i= 1;i<=5;i++){
+   /* for(let i= 1;i<=5;i++){
         let str = " *"
         for (let j=1;j<=i;j++){
             str +=" *";
         }
 console.log (str);
-
-
-
-
-    }
+ }*/
 
 
 
