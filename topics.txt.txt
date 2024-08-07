@@ -442,7 +442,7 @@
                         - m (multiline)    
                         
                     method fot R.E  
-                    
+
                     - exec
                     - test
                     - match
@@ -549,10 +549,10 @@
 
         # DOM
         - Document Methods
-            - getElementById
+            - getElementById                most reliable
             - getElementsByClassName
             - getElementsByTagName
-            - querySelector
+            - querySelector                           most reliable
             - querySelectorAll
             - HTML
                 - innerHTML

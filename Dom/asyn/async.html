@@ -7,6 +7,12 @@
 </head>
 <body>
     <script>
+
+ /*       Async javascript
+        i. callback[call back hell]
+        ii. Promise
+        iii.async/await
+        */
  /*const one = (callback )=>{
     setTimeout( ()=>{
         console.log("one")
@@ -25,25 +31,23 @@ const three = (callback )=>{
 }
 //CALL BACK HELL
 one( 
-    ( )=>{
+    ( ) =>{
         two (( )=>{
             three (( ) =>{
                 console.log("done")
             })
              })
-
          }
 );*/
  //ES6
- // promises
-const one = ( )=>{
+ // promises {classs} return resolve,reject{function}
+/*const one = ( )=>{
   return new Promise(( resolve,reject) =>{
     setTimeout(() =>{
         console.log("one")
         resolve();
     },3000)
   })
-
 }
 const two= ( )=>{
     return new Promise(( resolve,reject) =>{
@@ -52,67 +56,64 @@ const two= ( )=>{
             resolve ();
         },1000)
       })
-
-
 }
 const three = ( )=>{
     return new Promise(( resolve,reject) =>{
-        setTimeout(() =>{
+        setTimeout(( ) =>{
             console.log("three")
-            resolve();
+            resolve( );
         },4000)
       })
+    }
       // this is a smaller hell
-/*one().then (()=>{
-    two().then(() =>{
-    three().then(() =>{
+one( ).then (( )=>{
+    two( ).then(( ) =>{
+    three( ).then(( ) =>{
     })
     })
 })*/
+
 //Async Await
-async function  run (){ 
-await one();
-await two();
-await three();
+const one = ( )=>{
+    return new Promise(( resolve,reject) =>{
+      setTimeout(() =>{
+          console.log("one")
+          resolve();
+      },3000)
+    })
+  }
+  const two= ( )=>{
+      return new Promise(( resolve,reject) =>{
+          setTimeout(() =>{
+              console.log("two")
+              resolve ();
+          },1000)
+        })
+  }
+  const three = ( )=>{
+      return new Promise(( resolve,reject) =>{
+          setTimeout(( ) =>{
+              console.log("three")
+              resolve( );
+          },4000)
+        })
+      }
+async function  run ( ){ 
+await one( );
+await two( );
+await three( );
 }
 run();
 
-
-const getData = ()=>{
+// function
+/*const getData =( )=>{
     fetch("https://api.github.com/users/data").then((res =>{ 
 }))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+}*/
+ /* jb ap petch kro kisi cheez ko or is pr time lga  to  tb tk wait kro jbtk is sa is ka promis resolve na ha.
+ or jb wo hojay to data otawo or mera liya print kro.*/
 
 
     </script>
 </body>
-</html>
+</html> 
