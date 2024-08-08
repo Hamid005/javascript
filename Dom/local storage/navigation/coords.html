@@ -8,15 +8,31 @@
 </head>
 
 <body>
+    <div id="address"></div>
+    <iframe id="map"></iframe>
     <script>
-        navigator.geolocation.getCurrentPosition((position) => {
+        navigator.geolocation.getCurrentPosition((position) => {    // return position
             const lat = position.coords.latitude;
             const long = position.coords.longitude;
-            console.log(`Lat: ${lat} Long: ${long}`);
-            
+           // console.log(`Lat: ${lat} Long: ${long}`);
+
+
+           document.getElementById("map").setAttribute("src",)
+fetch(` https://us1.locationiq.com/v1/reverse.php?key=pk.2ce0ra50d1ca31e503b2a60e82d6a39g&lat=${lat}&lon=${long}&format=json`)
+.then(res => res.json( ))
+.then(json => {
+
+
+const a = json.results[0].locations[0].street
+
+   // console.log(json)
+
+   /* const h3 = document.createElement("h3")
+   h3.innerHTML = `Address : ${jason.address.state}`
+   document.getElementById("address").appendChild(h3)
+*/
+   })
         })
-    </script>
-
+</script>
 </body>
-
 </html>
