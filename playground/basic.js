@@ -174,40 +174,39 @@
 //   console.log(student.address.city);
 //  });
 
-const data  = {
-    products :[
-        {
-            name : " laptop",
-            price : 50000,
-            isAvailable : true
-        },
-        {
-            name : " mobile",
-            price : 25000,
-            isAvailable : false
-        },
-        {
-            name : " tv",
-            price : 20000,
-            isAvailable : false
-        },
-        {
-            name : "fridge",
-            price : 55000,
-            isAvailable : true
-        }
-    ]
-};
-const products = data.products;
-for( let i= 0; i<products.length; i++){
-    console.log(products[i].name);
-}
-let totalPrice = 0;
-for(let i = 0; i < data.products.length; i++) {
-    totalPrice += data.products[i].price;
-}
-
-console.log("Total price: " + totalPrice);
+// const data  = {
+//     products :[
+//         {
+//             name : " laptop",
+//             price : 50000,
+//             isAvailable : true
+//         },
+//         {
+//             name : " mobile",
+//             price : 25000,
+//             isAvailable : false
+//         },
+//         {
+//             name : " tv",
+//             price : 20000,
+//             isAvailable : false
+//         },
+//         {
+//             name : "fridge",
+//             price : 55000,
+//             isAvailable : true
+//         }
+//     ]
+// };
+// const products = data.products;
+// for( let i= 0; i<products.length; i++){
+//     console.log(products[i].name);
+// }
+// let totalPrice = 0;
+// for(let i = 0; i < data.products.length; i++) {
+//     totalPrice += data.products[i].price;
+// }
+// console.log("Total price: " + totalPrice);
 
 //  Map
 
@@ -220,13 +219,33 @@ console.log("Total price: " + totalPrice);
 // function test(x) {
 //     return x * 10;
 // }
-//map
-//filter
+//map /immutable / value can be changed
+//filter /immutable / not change
+
 //reduce
+// const numbers = [1, 2, 3, 4, 5];
+// const sum = numbers.reduce(((acc, current) => acc + current), 0);
+// console.log(sum); // Output: 15
+
 //sort
 // const list2 = [ 2,3,4,5,10,9]
 // const sort = list2.sort (( x,y ) => x - y);
 // console.log(sort)
+
+//indexOf
+// const arr = [1, 2, 3, 4, 5];
+// console.log(arr.indexOf(3)); // Output: 2
+// const str = "hello world";
+// console.log(str.indexOf("world")); // Output: 6
+
+//push
+// const arr = [1, 2, 3];
+// arr.push(4, 5);
+// console.log(arr); // Output: [1, 2, 3, 4, 5]
+// //pop
+// const lastElement = arr.pop();
+// console.log(arr); // Output: [1, 2, 3, 4]
+// console.log(lastElement); // Output: 5
 
 // Arary desructuring
 
