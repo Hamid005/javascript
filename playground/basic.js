@@ -195,17 +195,23 @@ const data  = {
             name : "fridge",
             price : 55000,
             isAvailable : true
-        },
+        }
     ]
-}
+};
 const products = data.products;
 for( let i= 0; i<products.length; i++){
     console.log(products[i].name);
 }
+let totalPrice = 0;
+for(let i = 0; i < data.products.length; i++) {
+    totalPrice += data.products[i].price;
+}
+
+console.log("Total price: " + totalPrice);
 
 //  Map
 
- // const square = marks.map((n) ==> n > 30 ? n* n : n );
+//  const square = marks.map((n) => n > 30 ? n* n : n );
 // var ary = [3, 4, 5, 10];
 
 // var b = ary.map(test);
