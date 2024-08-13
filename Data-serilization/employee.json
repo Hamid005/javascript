@@ -1,15 +1,15 @@
 {
     " s.no" : 8 ,
-    "gpa" :3.4,
-    "sportsman " :true,
-    "name " : "hamid khan",
-    " college " : " B.I.T.M.E",
-    " city " : "Banglore",
+    " gpa" :3.4,
+    " sportsman " :true,
+    " name " : "hamid khan ",
+    " college " : " B.I.T.M.E ",
+    " city " : " Banglore ",
     " country " : "india",
-    "score" : "99",
-    "address " :{
-        "city" :"Banglore",
-        " state " : "karnataka",
+    " score " : "99",
+    " address " :{
+        " city " :" Banglore ",
+        " state " : " karnataka ",
         " country " : " india "
 
     }
