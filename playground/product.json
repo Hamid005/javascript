@@ -1,5 +1,5 @@
-const data  = {
-    products :[
+
+    "products" : [
         {
             name : " laptop",
             price : 50000,

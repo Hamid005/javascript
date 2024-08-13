@@ -9,8 +9,8 @@
 // else{
 //     console.log('you are pass.');
 // }
-// const marks1 = 25;
-// if(marks1 <33 && marks1 >= 0 ){     // &=range
+// const marks1 = 33;
+// if(marks1 < 33 && marks1 >= 0 ){     // &=range
 //     console.log("you have failed");
 // }
 //  else if(marks1 <=33  && marks1 <= 50 ){
@@ -27,28 +27,27 @@
 
 // conditional
 // is use for only two condition 
-
-// ( marks >= 33 ? console.log( " pass ")  : console.log( " fail " ) );
+ //( marks >= 33 ? console.log( " pass ")  : console.log( " fail " ) );
 
 //switch:
-
 // const number = 10 ;
 // switch( number){
 //     case 10:
-//         console.log("yes it is 10");
+//         console.log("Yes it is 10");
 //         case 20 :
-//             console.log ('no its not 10');
+//             console.log ('No its not 10');
 //             break ;
 //             default :
 //             console.log ('this is default')
+// }
 // // exampl # 2
 //             const number1 = 10;
 //             switch (number1 < 0){
 //                 case true :
 //                     console.log("negative");
-//                     case break :
-// default :
-// console.log ("positive") ;          
+//                   break ;
+//                       default :
+//                       console.log ("positive") ;          
 // }
 
 // // exampl 2
@@ -57,15 +56,14 @@
 // switch(name){
 //     case "abduallah":
 //     console.log ("hello hamid");
+//     break;
 // }
-
 
 //  template literals
 
-
 // const firstName = "hamid";
 // const lastName = "khan";
-// console.log("hello" + firstName+ " " + lastName);
+//console.log("hello" + firstName+ " " + lastName);
 // console.log( ` hello ${firstName} ${lastName}` );
 
 // loops
@@ -75,7 +73,7 @@
 //     console.log(i);
 // }
 
-// array iliterate for loop
+// array iterate for loop
 
 // const list =[ 23,45,1,4,6,7,90]
 // for(let i=0;  i < list.length; i++){
@@ -121,10 +119,11 @@
 // console.log(data.address.city); // Output: " Mardan "
 
 //              if (data.isPass) {
-    //     console.log("Friends:");
-    //     data.friends.forEach(friend => {
-    //       console.log(friend.trim()); // trim() to remove extra spaces
-    //     });
+//         console.log("Friends:");
+//         data.friends.forEach(friend => {
+//           console.log(friend.trim()); // trim() to remove extra spaces
+//         });
+//     }
   
 // object of object
 
@@ -140,10 +139,9 @@
 //                            country : " pakistan ",
 //                             tehsil : " warsak Road "
 //         }
-//         }
+//         },
 
-//   }
-//     {
+//         {
 //                 marks : 30,
 //                 name : "inshaullah",
 //                 gpa : 2.0 ,
@@ -168,42 +166,42 @@
 //                              tehsil : " katlang "
 //             }
 //             }
+//         ]
 // console.log(student[2]. friends[2]);
 
 // console.log("Cities:");
-// student.forEach(student => {
+//  student.forEach(student => {
 //   console.log(student.address.city);
-// });
+//  });
 
-// const data  = {
-//     products :[
-//         {
-//             name : " laptop",
-//             price : 50000,
-//             isAvailable : true
-//         },
-//         {
-//             name : " mobile",
-//             price : 25000,
-//             isAvailable : false
-//         },
-//         {
-//             name : " tv",
-//             price : 20000,
-//             isAvailable : false
-//         },
-//         {
-//             name : "fridge",
-//             price : 55000,
-//             isAvailable : true
-//         },
-
-//     ]
-// }
-// const products = data.products;
-// for( let i= 0; i<products.length; i++){
-//     console.log(products[i].name);
-// }
+const data  = {
+    products :[
+        {
+            name : " laptop",
+            price : 50000,
+            isAvailable : true
+        },
+        {
+            name : " mobile",
+            price : 25000,
+            isAvailable : false
+        },
+        {
+            name : " tv",
+            price : 20000,
+            isAvailable : false
+        },
+        {
+            name : "fridge",
+            price : 55000,
+            isAvailable : true
+        },
+    ]
+}
+const products = data.products;
+for( let i= 0; i<products.length; i++){
+    console.log(products[i].name);
+}
 
 //  Map
 
@@ -278,8 +276,8 @@
 // string.split ( ",");
 
 // trim
-const name ="hamid"
-const trim =  name.trim( );
+// const name ="hamid"
+// const trim =  name.trim( );
 
 
 // Array

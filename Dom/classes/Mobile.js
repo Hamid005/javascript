@@ -1,4 +1,4 @@
-class Mobile {
+ class Mobile {
     name;
     model;
     battery;

@@ -1,22 +1,19 @@
- // "This" refer to the object of the class  
+ // "This" refer to the object of the  curent class  
 class Bank {
     // private:
     balance = 0;
-
     getBalance( ){
         return this.balance;
     }
     setBalance(balance){
         this.balance = balance;
     }
-
-
     constructor(balance){
         this.balance = this.balance + balance;
     }
         // this.balance
         // this.credit( )
-    // }
+    // }  
     // getRef( ){
     //     return this;
     // }
@@ -43,7 +40,7 @@ user1.credit(100);
 user1.debit(500);
 user1.debit(500);
 
-console.log( ` Your balance is :  `+ user1.getBalance () )
+console.log(`Your balance is :  `+ user1.getBalance () )
 
 // const obj1= new Bank (500);
 // const obj2 = obj1.getRef( );
@@ -55,7 +52,7 @@ console.log( ` Your balance is :  `+ user1.getBalance () )
 //     console.log("No")
 // }
 // }
-
+// Guard class
 
 
 
