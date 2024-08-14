@@ -268,27 +268,31 @@
 //                                 tehsil : " warsak Road "
 //             }
 //             }
-//             const { name ,address } = student_list;
-//             console.log(address)
+// ];
+//             console.log(student[0].address);
+
     
 //   STRING
 
 // const str1 = "hello";
 // const str2 = "ello";
-//  const str ="My country name is pakistan"
-//const str3 = str1.concat(str2)
+// const str ="My country name is pakistan"
+
+//const str3 = str1.concat(str2);
 // const str3 = str1 + str2;
-// const str4 =`${ str1}   ${str2}`;
+//const str4 =`${ str1}   ${str2}`;
 
-//const l = str.indexOf("new")
-//console.log(l)
+//indexOf
+//const l = str.indexOf("is")
+ //console.log(l)
 
+// replace
 //const l2 = str.replace("new","old"); // replace
-//const.log(l2)
+//console.log(l2)
 
 // slice
 // const key = "pakistan"
-// const  country = str.slice(str.indexOf("key"),key.length + str.indexOf(key));
+// const  country = str.slice(str.indexOf("key"), str.indexOf(key) + key.length);
 // console.log(country)
 
 //split
@@ -297,19 +301,18 @@
 
 // const string="1,hamid,swabi.3.25 |  6th | ICP"
 // const   [ id , name  , address ,  gpa , semester,institue] =
-
 // string.split ( ",");
 
 // trim
-// const name ="hamid"
-// const trim =  name.trim( );
+// const name1 ="      hamid"
+// const trim =  name1.trim( );
 
 
 // Array
 
 //forEach 
 //Map,filter,reduce,indexOf,sort,slice
-//push/PopStateEvent,concat,fill,some,every,replace
+//push/PopStateEvent,concat,fill,some,every
 
 //String
 //trim,slice,concat,substring,split,indexOf
@@ -318,10 +321,10 @@
 //Array,object destructuring
 
 // deafault parameter
-// const fun =( name)=>{
-//     console.log(`Hello ${name}` )
-// }
-// fun( );
+const fun =( name)=>{
+    console.log(`Hello ${name}` )
+}
+fun( );
 
 
 
