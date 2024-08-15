@@ -71,6 +71,7 @@ let t = [  myName]
 console.log(t)*/
 
 // es6 features
+// object property value shorthand
 
 /*const fName = "hamid";
 const lName = "khan";
@@ -79,6 +80,7 @@ const age = "22";
 const city = "Peshwar";
 const village = "kili";
 const houseNo= 30;
+
 
 const data = {
     fName,
@@ -102,51 +104,47 @@ const test2 = 23
 const num= test1.toFixed(2);       
 const num2= Math.ceil(test1);   //number ko upper lijana
 const num3= Math.floor(test1); // number ko nicha lana
-
 console.log(num)
 console.log(num2)
 console.log(num3)*/
+// const str = test1.toString( ); // num to string
 
-
-// const str = test1.toString( );
-
+ //node= backened
+ //browser= frontened
 //const fs = require("fs"); // use for new file in node
 // fs.writeFileSync("text.txt","hello world")
-
 /*for(let i= 0; i<10; i++){  
  const r = Math.random( ); //generate random num in browser
  console.log( Math.ceil(r*100))
 }*/
-
- //random between numbers
+ // random between numbers{ dice}
 /*
+// copy from google
 function randomIntFromInterval(min, max) {       // min and max included 
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
   for (let i=0; i< 10;i++){
     console.log(randomIntFromInterval(1,6))
-  }
-*/
+  }*/
 
  // Vanilla javascript= no uses libraries
 // momentJS = uses libraries
-
 // heaf = boht zyda
 
   // date
-   /*const d= new Date();  
- console.log(d.getDate())
- console.log(d.getFullYear())   
- console.log(d.getYear())
- console.log(d.getHours())
- console.log(d.getDay())
- console.log(d.getMinutes())
- console.log(d.getSeconds())
+   /*const d= new Date( );  
+ console.log(d.getDate( ))
+ console.log(d.getFullYear( ))   
+ console.log(d.getYear( ))
+ console.log(d.getHours( ))
+ console.log(d.getDay( ))
+ console.log(d.getMinutes( ))
+ console.log(d.getSeconds( ))
  console.log(d.toDateString("dd/mm/yyyy") )
- console.log(d.getMilliseconds())
- console.log(d.getTime())
- console.log(d.getTimezoneOffset())
- console.log(d.getUTCDate())*/
+ console.log(d.getMilliseconds( ))
+ console.log(d.getTime( ))
+ console.log(d.getTimezoneOffset( ))
+ console.log(d.getUTCDate( ))*/
 
 
  //min mix
@@ -155,7 +153,7 @@ const max = Math.max(...list)
 console.log(max)*/
 
 
-//sets[ A js set is a collection of unique values ]
+//sets[ A JS set is a collection of unique values ]
  /*const s = new Set ([1,2,3,4,5,6,7,8,9])
  s.add(11)
  console.log(s)*/
@@ -166,9 +164,9 @@ console.log(max)*/
     name : "hamid khan",
     age : 22,
     marks : 30
- }*/
-    // const   keys = Object.keys (obj)
-  //  console.log(keys)
+ }
+  //const   keys = Object.keys (obj)
+   console.log(keys)*/
 
 //loops
   // for in loop (iterate  over an object with keys)
@@ -178,6 +176,7 @@ console.log(max)*/
 for (o in obj){
     console.log(obj[0].name)
 }*/
+
    //for of loop( iterate over Arrays,Strings,object ,anywhere)
    /*const str = "pakistan"
    for (let j of str){
