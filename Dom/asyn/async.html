@@ -7,13 +7,11 @@
 </head>
 <body>
     <script>
-
  /*       Async javascript
         i. callback[call back hell]
         ii. Promise
-        iii.async/await
-        */
- /*const one = (callback )=>{
+        iii.async/await */
+ /* const one = (callback )=>{
     setTimeout( ()=>{
         console.log("one")
         callback( );
@@ -40,20 +38,20 @@ one(
          }
 );*/
  //ES6
- // promises {classs} return resolve,reject{function}
+ // promises {class} return resolve,reject{function}
 /*const one = ( )=>{
   return new Promise(( resolve,reject) =>{
-    setTimeout(() =>{
+    setTimeout(( ) =>{
         console.log("one")
-        resolve();
+        resolve( );
     },3000)
   })
 }
 const two= ( )=>{
     return new Promise(( resolve,reject) =>{
-        setTimeout(() =>{
+        setTimeout( ( ) =>{
             console.log("two")
-            resolve ();
+            resolve ( );
         },1000)
       })
 }
@@ -103,7 +101,7 @@ await one( );
 await two( );
 await three( );
 }
-run();
+run( );
 
 // function
 /*const getData =( )=>{
