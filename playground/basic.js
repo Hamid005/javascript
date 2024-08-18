@@ -321,10 +321,10 @@
 //Array,object destructuring
 
 // deafault parameter
-const fun =( name)=>{
-    console.log(`Hello ${name}` )
-}
-fun( );
+// const fun =( name)=>{
+//     console.log(`Hello ${name}` )
+// }
+// fun( );
 
 
 
