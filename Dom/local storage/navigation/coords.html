@@ -21,8 +21,6 @@
 fetch(` https://us1.locationiq.com/v1/reverse.php?key=pk.2ce0ra50d1ca31e503b2a60e82d6a39g&lat=${lat}&lon=${long}&format=json`)
 .then(res => res.json( ))
 .then(json => {
-
-
 const a = json.results[0].locations[0].street
 
    // console.log(json)
